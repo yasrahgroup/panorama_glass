@@ -82,7 +82,6 @@ export function RequestQuotePage({ prefillSubject }: RequestQuotePageProps) {
   const [fileWarning, setFileWarning] = useState<string | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [submittedRef, setSubmittedRef] = useState<string | null>(null);
-  const [catalogNotice, setCatalogNotice] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const toggleSystem = (id: string) => {

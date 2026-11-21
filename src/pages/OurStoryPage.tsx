@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { PageRoute } from '../types';
-import { CERTIFICATIONS, STORY_HUB_IMAGE } from '../data/panoramaData';
-import { SafeImage } from '../components/SafeImage';
+import { CERTIFICATIONS } from '../data/panoramaData';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { LogoPattern } from '../components/LogoPattern';
 
