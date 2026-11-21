@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.aistudio/
+.vite/
+*.tsbuildinfo
+.eslintcache
+.DS_Store
+*.log
+npm-debug.log*
+.env*
+!.env.example
+playwright-report/
+test-results/
