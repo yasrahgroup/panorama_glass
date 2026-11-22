@@ -115,7 +115,7 @@ export function Modal({
         tabIndex={-1}
         aria-label="Close dialog"
         onClick={onClose}
-        className="absolute inset-0 cursor-default bg-brand-ink/80 backdrop-blur-md"
+        className="absolute inset-0 cursor-default bg-ink/80 backdrop-blur-md"
       />
       <div
         ref={panelRef}
@@ -125,21 +125,21 @@ export function Modal({
         aria-describedby={description ? descriptionId : undefined}
         tabIndex={-1}
         className={cn(
-          'relative z-10 max-h-[90vh] w-full overflow-y-auto rounded-sm border border-surface-container bg-surface-bright shadow-overlay focus:outline-none',
+          'relative z-10 max-h-[90vh] w-full overflow-y-auto rounded-xl border border-line bg-surface shadow-overlay focus:outline-none',
           SIZE_CLASSES[size],
           className,
         )}
       >
-        <div className="flex items-start justify-between gap-6 border-b border-surface-container px-5 py-4 sm:px-6">
+        <div className="flex items-start justify-between gap-6 border-b border-line px-5 py-4 sm:px-6">
           <div>
             <h2
               id={titleId}
-              className="font-display text-xl font-bold tracking-tight text-brand-deep"
+              className="font-display text-xl font-bold tracking-tight text-burgundy"
             >
               {title}
             </h2>
             {description && (
-              <p id={descriptionId} className="mt-1 text-sm text-on-surface-variant">
+              <p id={descriptionId} className="mt-1 text-sm text-muted">
                 {description}
               </p>
             )}
@@ -148,7 +148,7 @@ export function Modal({
             type="button"
             onClick={onClose}
             aria-label="Close dialog"
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-sm text-muted transition-colors hover:bg-canvas hover:text-ink focus-visible:ring-2 focus-visible:ring-burgundy"
           >
             <X className="h-4 w-4" aria-hidden="true" />
           </button>
@@ -157,7 +157,7 @@ export function Modal({
         <div className="px-5 py-6 sm:px-6">{children}</div>
 
         {footer && (
-          <div className="flex flex-wrap items-center justify-end gap-3 border-t border-surface-container bg-surface-container-low px-5 py-4 sm:px-6">
+          <div className="flex flex-wrap items-center justify-end gap-3 border-t border-line bg-canvas px-5 py-4 sm:px-6">
             {footer}
           </div>
         )}

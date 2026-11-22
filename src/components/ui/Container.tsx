@@ -8,14 +8,14 @@ interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const SIZE_CLASSES: Record<ContainerSize, string> = {
-  default: 'max-w-page',
+  default: '',
   narrow: 'max-w-narrow',
 };
 
 export function Container({ size = 'default', className, ...props }: ContainerProps) {
   return (
     <div
-      className={cn('mx-auto w-full px-5 lg:px-12', SIZE_CLASSES[size], className)}
+      className={cn('container-page', SIZE_CLASSES[size], className)}
       {...props}
     />
   );

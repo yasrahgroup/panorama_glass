@@ -15,7 +15,7 @@ export function AnimatedCounter({
   prefix = '',
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.25 });
+  const inView = useInView(ref, { amount: 0.25 });
   const prefersReduced = useReducedMotion();
   const formattedTarget = `${prefix}${target.toFixed(decimals)}${suffix}`;
   const [animatedValue, setAnimatedValue] = useState<number | null>(null);
@@ -37,7 +37,7 @@ export function AnimatedCounter({
       : `${prefix}${animatedValue.toFixed(decimals)}${suffix}`;
 
   return (
-    <span ref={ref} className="tabular-nums">
+    <span ref={ref} className="tabular-nums font-mono">
       {display}
     </span>
   );

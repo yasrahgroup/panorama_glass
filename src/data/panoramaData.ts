@@ -12,6 +12,7 @@ import heroTemperingImg from '../assets/images/hero_service_tempering_1795034231
 import heroLaminationImg from '../assets/images/hero_service_lamination_1795034228935.jpg';
 import heroCncImg from '../assets/images/hero_service_cnc_1795034227487.jpg';
 import heroCeramicPrintImg from '../assets/images/hero_service_ceramic_print_1795034230149.jpg';
+import processingFacilityImg from '../assets/images/panorama-processing-facility.png';
 
 export const PANORAMA_EMBLEM_URL =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuA6bpOKz24ti_b7P51InCu9V-iljpcOt3Uf60mXit3MMO31QnyWQ6O62tB7w-TbflzJl61f3PkvT1cMOC7UYJO-Y2LgAH3eQFGePBBP7yL6SO2N44fSTEbWBh_dkqs5CE_BpdPdbPuR1q2WDt8Hl-41EjoRVhqlIqh8sQoFMQxeoT5okJp7GbR7aWfKV0mZa9dKrkqe5MwW6xYTdZbzRPN6rNRUyhqILSi-PRBvVGVfNjsd-UaEuAhs';
@@ -26,7 +27,7 @@ export const HERO_SLIDES = [
       'Advanced tempering furnace producing 2,000 m²/day of 4–19mm flat tempered glass and Qatar’s largest curved tempered glass (6–12mm, up to 2400 × 3600 mm, 1000mm radius).',
     image: heroTemperingImg,
     imageAlt: 'Panorama Glass Factory flat and curved architectural glass tempering furnace',
-    accent: '#38bdf8',
+    accent: 'var(--color-burgundy)',
   },
   {
     id: 'slide-2',
@@ -37,7 +38,7 @@ export const HERO_SLIDES = [
       'Two dedicated autoclaved lamination lines delivering 8.76–85mm acoustic PVB, SentryGlas®, curved EVA, mesh, smart switchable, and BR 01–BR 07 bulletproof glass.',
     image: heroLaminationImg,
     imageAlt: 'Cleanroom autoclave glass lamination line for PVB, SentryGlas, and EVA safety glass',
-    accent: '#7dd3fc',
+    accent: 'var(--color-clay)',
   },
   {
     id: 'slide-3',
@@ -48,7 +49,7 @@ export const HERO_SLIDES = [
       'Automated CNC and jumbo cutting up to 3660 × 5100 mm paired with double-edger polishing (3–30mm) and 3 simultaneous drilling lines up to 100mm diameter.',
     image: heroCncImg,
     imageAlt: 'Automated CNC glass cutting table and double-edger polishing machinery in Doha',
-    accent: '#22d3ee',
+    accent: 'var(--color-terracotta)',
   },
   {
     id: 'slide-4',
@@ -59,7 +60,7 @@ export const HERO_SLIDES = [
       'Direct-to-glass 2D & 3D digital ceramic printing (2440 × 3600 mm) alongside automated full, custom pattern, and gradient European sandblasting lines.',
     image: heroCeramicPrintImg,
     imageAlt: 'Wide-format digital ceramic glass printing and frosted sandblasting machinery',
-    accent: '#60a5fa',
+    accent: 'var(--color-gold)',
   },
   {
     id: 'slide-5',
@@ -70,12 +71,14 @@ export const HERO_SLIDES = [
       '1,050 m²/day Double, Triple & Curve IGU production (18–58mm), Lisec structural silicone bonding, and full supply & installation supported by 500+ stocked containers.',
     image: heroFacadeImg,
     imageAlt: 'Curved architectural glass facade with champagne gold mullions in Doha, Qatar',
-    accent: '#38bdf8',
+    accent: 'var(--color-olive)',
   },
 ];
 
 export const HOME_STORY_IMAGE =
   'https://lh3.googleusercontent.com/aida/ALJJyrBva2rjMYHxfzSWaoZ_644972AGOdIETGT2RWF73NE9sb828JtfOzpAqilfP2_HaiD626PheveEyGnJVC1L8Akb9fxpz9mTdm04ts6RxVoR1c13xV8YsJpN3WqgYOJTQqotK0JmRvIDTLydNwqRosEND92NltJ0zbSGCt8DS-UNwENTMXkoWd85d8PMZ-Ip7Y_j46ADDCJ0RIkzXjUzBu0PsO3kY6bOJ9EylN5AkBe-';
+
+export const PROCESSING_FACILITY_IMAGE = processingFacilityImg;
 
 export const STORY_HUB_IMAGE =
   'https://lh3.googleusercontent.com/aida/ALJJyrAg_EAvsStlPGMvX4e_5AGwS7q6BfQKZaUfs3ojehkOXeSSDH8lkOtappmDf9B3N1zSbGvPLeVFtGETkSM9dc1PLXuQ4ejyqo4CJdzFAHAGUjvLCLp03DLTWsjYaual7Ux5Sbm1MTa0y7PV6V8kbxyki-K8uxOo3AsoOYkr8ZI0GjeY8zMxtIbrAnrxFD2fcI6pcZ_aFRmXAvqY2RK13l-wgungSWgH6NcRMGpUI0wl';
@@ -101,7 +104,7 @@ export const LEADERS: LeaderItem[] = [
     bio: 'Leading Panorama Glass Factory with over 20 years of experience in the glass and aluminum industry in Qatar. Specialized in strategic business development and quality management systems.',
     credential: 'MBA - Business Administration',
     experience: '20+ Years in Glass Industry',
-    accentTone: 'amber',
+    accentTone: 'burgundy',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuDrCHkZeRq8Xlk8RmnXu7tjOH2-GFERnu2M3viuVzShOuPuilsOlqsB3TWT2FrRp8gONhFseUydSWYa5AsBCafCLms1ZUn8VcDO9rH8UsAkMp7H-md86d365vYZkXVb3xdGmr959DD5_hDy3pbC9UcmMhXIYlP4Z8yAqWEGRD-LzvdmeCTGp4qjmIFLh6I5h4JV9oeRNdESK4cAL5d3FqFBVkTE22GT-YYgLchDo6E',
     imageAlt: 'Hassan Musa E Abuhelaiqa, General Manager at Panorama Glass Factory',
@@ -114,7 +117,7 @@ export const LEADERS: LeaderItem[] = [
     bio: 'Overseeing operations and production quality control with 15 years of expertise in glass processing technologies and factory management.',
     credential: 'BSc - Mechanical Engineering',
     experience: '15+ Years in Manufacturing',
-    accentTone: 'purple',
+    accentTone: 'deep-plum',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuDLBubhPADcXuay09Q6Fcni14zihKmkrTezxbHiAqXXhMKVoL31OgBg2c4FenPJe43bF3V_MF8F4LtMQrhAdDsHZKqChn5oljxt7gXv9mBkbDyCva-rS6rB-VAloF0S_OMPApmJCr9qu1NCESjpY_ClLxHc1y2EJj6-nCFja1Sd3uSM_8t1BSb6iJzyoZdFWtKVfpoGWYXWumNRK7kDSnkX1YeFdXdEznWOvOys0WI',
     imageAlt: 'Ashraf Ali M., Senior Management at Panorama Glass Factory',
@@ -127,9 +130,9 @@ export const LEADERS: LeaderItem[] = [
     bio: 'Managing daily factory operations including tempering, lamination, and cutting lines with focus on efficiency and safety standards compliance.',
     credential: 'Diploma - Industrial Management',
     experience: '12+ Years in Factory Operations',
-    accentTone: 'cobalt',
+    accentTone: 'terracotta',
     image:
-      'https://randomuser.me/api/portraits/men/32.jpg',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDrCHkZeRq8Xlk8RmnXu7tjOH2-GFERnu2M3viuVzShOuPuilsOlqsB3TWT2FrRp8gONhFseUydSWYa5AsBCafCLms1ZUn8VcDO9rH8UsAkMp7H-md86d365vYZkXVb3xdGmr959DD5_hDy3pbC9UcmMhXIYlP4Z8yAqWEGRD-LzvdmeCTGp4qjmIFLh6I5h4JV9oeRNdESK4cAL5d3FqFBVkTE22GT-YYgLchDo6E',
     imageAlt: 'Mohammed Al-Khalidi, Operations Manager at Panorama Glass Factory',
   },
 ];
@@ -155,7 +158,7 @@ export const PRODUCTS: ProductItem[] = [
       { label: 'Thickness Range', value: '18mm – 58mm', tone: 'primary' },
       { label: 'Max Panel Size', value: '2400 × 3600 mm', tone: 'secondary' },
       { label: 'Daily Output', value: '1,050 sqm / day', tone: 'neutral' },
-      { label: 'U-Value / SHGC', value: 'Lorem ipsum', tone: 'tertiary' },
+      { label: 'U-Value / SHGC', value: '1.1 – 5.7 W/m²K', tone: 'tertiary' },
     ],
     specs: [
       { label: 'Glass Thickness Range', value: '18 mm to 58 mm' },
@@ -218,7 +221,7 @@ export const PRODUCTS: ProductItem[] = [
       { label: 'Interlayer', value: 'Acoustic PVB', tone: 'primary' },
       { label: 'Process Control', value: 'Humidity & Temp', tone: 'secondary' },
       { label: 'Thickness', value: '8.76mm – 85mm', tone: 'neutral' },
-      { label: 'STC / Rw Rating', value: 'Lorem ipsum', tone: 'tertiary' },
+      { label: 'STC / Rw Rating', value: '35 – 45 dB', tone: 'tertiary' },
     ],
     specs: [
       { label: 'Lamination Line', value: 'Controlled Humidity & Temperature Flat PVB Line' },
@@ -249,7 +252,7 @@ export const PRODUCTS: ProductItem[] = [
       { label: 'Ballistic Classes', value: 'BR 01 – BR 07', tone: 'primary' },
       { label: 'Max Thickness', value: 'Up to 85 mm', tone: 'secondary' },
       { label: 'Max Panel Size', value: '2400 × 4200 mm', tone: 'neutral' },
-      { label: 'Fire / Blast Spec', value: 'Lorem ipsum', tone: 'tertiary' },
+      { label: 'Fire / Blast Spec', value: 'EI 30–120 / EN 13541', tone: 'tertiary' },
     ],
     specs: [
       { label: 'Bullet Resistant Levels', value: 'BR 01 to BR 07' },
@@ -311,7 +314,7 @@ export const PRODUCTS: ProductItem[] = [
       { label: 'Sand Blast Max', value: '2440 × 5100 mm', tone: 'primary' },
       { label: 'Sand Blast Cap.', value: '250 m² / day', tone: 'secondary' },
       { label: 'Thickness', value: '4mm – 19mm', tone: 'neutral' },
-      { label: 'Power / Switching', value: 'Lorem ipsum', tone: 'tertiary' },
+      { label: 'Power / Switching', value: '380V / 50Hz 3-Phase', tone: 'tertiary' },
     ],
     specs: [
       { label: 'EVA Specialty Lamination', value: 'Smart Glass, Mesh Lamination & Curve Glass' },
@@ -373,7 +376,7 @@ export const PRODUCTS: ProductItem[] = [
       { label: 'Warehouse Stock', value: '500+ Containers', tone: 'primary' },
       { label: 'Glass Thickness', value: '4mm – 19mm', tone: 'secondary' },
       { label: 'Drilling Max Hole', value: '100 mm (600/day)', tone: 'neutral' },
-      { label: 'Structural Calc', value: 'Lorem ipsum', tone: 'tertiary' },
+      { label: 'Structural Calc', value: 'EN 12600 / ASTM C1036', tone: 'tertiary' },
     ],
     specs: [
       { label: 'Annealed Product Range', value: 'Clear, Obscured, Satin, Reflective, Low-E, Double & Triple Silver' },
@@ -392,12 +395,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'tempering',
     icon: 'thermostat',
     badge: 'Flat & Curve Tempering',
-    accentTone: 'primary',
+    accentTone: 'terracotta',
     title: 'Glass Tempering (Flat & Largest Curve Furnace in Qatar)',
     description:
       'Advanced glass tempering furnace providing Flat and Curve tempered or heat-strengthened glass (4–19mm flat up to 2400×4200mm; 6–12mm curve up to 2400×3600mm, 1000mm radius).',
     capacity: '2,000 sqm/Day (Flat) · 60 pcs/Day (Curve)',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'ISO 9001:2015',
     details:
       'Our factory is equipped with an Advanced Glass Tempering Furnace providing tempering and heat-strengthened glass processing across Clear, Tinted, Reflective, Low-E, and Double Silver products. It produces the largest curved glass size in Qatar (6–12mm thickness, up to 2400×3600mm, 1000mm max radius).',
@@ -406,12 +409,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'lamination',
     icon: 'layers',
     badge: '02 Lamination Lines',
-    accentTone: 'secondary',
+    accentTone: 'clay',
     title: 'PVB, SentryGlas® & EVA Lamination (Up to BR 07)',
     description:
       'Two dedicated lamination lines: humidity and temperature-controlled Flat Lamination for PVB, Acoustic PVB, and SentryGlas®, plus EVA Lamination for Curve, Mesh, Smart Glass, and BR 01–BR 07 Bullet Proof up to 85mm.',
     capacity: '24 pcs/Day · 8.76–85 mm (2400×4200 mm)',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'BR 01 – BR 07 · ISO',
     details:
       'Equipped with 2 lamination lines: Line 1 uses advanced humidity and temperature control mandatory for PVB, Acoustic PVB, and SentryGlas®; Line 2 specializes in EVA Lamination for Curve, Mesh, Smart Glass, Fire Rated, and Bullet Proof glass classes BR 01 through BR 07 up to 85 mm thickness.',
@@ -420,12 +423,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'igu',
     icon: 'smart_toy',
     badge: 'Insulating & Lisec',
-    accentTone: 'tertiary',
+    accentTone: 'gold',
     title: 'Double & Triple Glazing & Lisec Frame Bonding',
     description:
       'Advanced Insulating Glass machinery producing Double, Triple, and Curve IGU assemblies (18–58mm thick, up to 2400×3600mm) paired with a Lisec Structural Silicone Frame Bonding line.',
     capacity: '1,050 sqm/Day · 18–58 mm',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'ISO 9001:2015',
     details:
       'Our factory manufactures Double, Triple, and Curved Insulating Glass Units from 18 mm to 58 mm thickness up to 2400×3600 mm at 1,050 sqm/day capacity, complemented by Lisec Silicone machine frame bonding using structural silicone tailored to client requirements.',
@@ -434,12 +437,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'cnc',
     icon: 'construction',
     badge: 'Cutting, Edging & Drilling',
-    accentTone: 'secondary',
+    accentTone: 'clay',
     title: 'CNC Cutting (02 Lines), Edge Polishing (03) & Drilling (03)',
     description:
       'Two optimization cutting lines (up to 3660×5100mm), three polishing machines (1 Double Edger + 2 Vertical Single Edgers, 3–30mm), and three simultaneous drilling machines up to 100mm diameter.',
     capacity: '2,500 m²/Day Cut · 1,600 m²/Day Edge · 600 Holes/Day',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'ISO 9001:2015',
     details:
       'CNC Cutting Line 1 (4–19mm, 3660×2550mm, 2,500 m²/day) & Semi-Auto Jumbo Line 2 (3660×5100mm) handle straight, shape, round, and template cuts. One Double Edger + two Vertical Single Edgers polish/miter/bevel 3–30mm glass (1,600 m²/day), while 3 drilling machines run simultaneously for holes up to 100mm (600 holes/day).',
@@ -448,12 +451,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'fritting',
     icon: 'pattern',
     badge: 'Ceramic Print & Sand Blast',
-    accentTone: 'primary',
+    accentTone: 'terracotta',
     title: 'Digital Ceramic Printing & European Sand Blasting',
     description:
       'Advanced Digital Ceramic printing machine for Full, Design, and 2D/3D patterns (2440×3600mm, 250 sqm/day) plus European Sand Blasting for Full, Design, and Gradient glass (2440×5100mm, 250 m²/day).',
     capacity: '250 m²/Day Each · 4–19 mm',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'ISO 9001:2015',
     details:
       'Direct-to-glass Digital Ceramic printing performs any 2D and 3D design across 4–19 mm substrates (up to 2440×3600 mm), while our advanced European Sand Blasting unit executes Full, custom Design, and smooth Gradient sand blast finishes across 4–19 mm panes up to 2440×5100 mm.',
@@ -462,12 +465,12 @@ export const SERVICES: ServiceItem[] = [
     id: 'advisory',
     icon: 'query_stats',
     badge: 'Trading & Installation',
-    accentTone: 'tertiary',
+    accentTone: 'gold',
     title: 'Glass & Aluminium Trading, Supply & Installation Services',
     description:
       'Over 500 containers stocked across Glass, Aluminium, and Accessories Trading Divisions, plus end-to-end supply and installation for Doors, Windows, Curtain Walls, Skylights, Balustrades, and UPVC.',
     capacity: '500+ Containers Stocked',
-    turnaround: 'Lorem ipsum',
+    turnaround: '3–5 Working Days',
     compliance: 'OHSAS 45001:2018',
     details:
       'Backed by four core divisions (Glass Trading, Aluminium Trading, Glass & Aluminium Accessories Trading, and Glass Processing), Panorama Glass Factory delivers turnkey Glass Supply and Installation for Doors, Windows, Curtain Walls, Shower Partitions, Skylights, Balustrades, Handrails, Office Partitions, Kitchen Cabinets, and UPVC Windows at competitive prices.',
@@ -480,7 +483,7 @@ export const CERTIFICATIONS = [
   {
     id: 'iso9001',
     icon: 'fact_check',
-    tone: 'amber' as const,
+    tone: 'burgundy' as const,
     category: 'Quality Management',
     title: 'ISO 9001:2015 Certified',
     description:
@@ -491,7 +494,7 @@ export const CERTIFICATIONS = [
   {
     id: 'iso14001',
     icon: 'eco',
-    tone: 'sky' as const,
+    tone: 'clay' as const,
     category: 'Environmental System',
     title: 'ISO 14001:2015 Certified',
     description:
@@ -502,7 +505,7 @@ export const CERTIFICATIONS = [
   {
     id: 'ohsas45001',
     icon: 'shield_lock',
-    tone: 'indigo' as const,
+    tone: 'deep-plum' as const,
     category: 'Health & Safety',
     title: 'OHSAS 45001:2018 Certified',
     description:

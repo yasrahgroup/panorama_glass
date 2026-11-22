@@ -36,7 +36,7 @@ export interface ServiceItem {
   id: string;
   icon: string;
   badge: string;
-  accentTone: 'primary' | 'secondary' | 'tertiary';
+  accentTone: 'primary' | 'secondary' | 'tertiary' | 'clay' | 'terracotta' | 'gold' | 'olive';
   title: string;
   description: string;
   capacity: string;
@@ -76,7 +76,7 @@ export interface LeaderItem {
   bio: string;
   credential: string;
   experience: string;
-  accentTone: 'amber' | 'purple' | 'cobalt';
+  accentTone: 'burgundy' | 'deep-plum' | 'terracotta';
   image: string;
   imageAlt: string;
 }
@@ -87,7 +87,7 @@ export interface TestimonialItem {
   initials: string;
   name: string;
   role: string;
-  tone: 'sky' | 'amber' | 'indigo';
+  tone: 'clay' | 'burgundy' | 'deep-plum';
 }
 
 export interface TenderFaqItem {

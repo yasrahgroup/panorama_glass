@@ -1,4 +1,5 @@
 import type { InputHTMLAttributes, TextareaHTMLAttributes, SelectHTMLAttributes } from 'react';
+import { cn } from '@/lib/cn';
 
 interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -6,18 +7,19 @@ interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
   required?: boolean;
 }
 
-export function FormInput({ label, error, required, id, className = '', ...props }: FormInputProps) {
+export function FormInput({ label, error, required, id, className, ...props }: FormInputProps) {
   return (
     <div className="space-y-1.5">
-      <label htmlFor={id} className="block text-xs font-semibold text-[#0b192c]">
-        {label} {required && <span className="text-[#dc2626]">*</span>}
+      <label htmlFor={id} className="field-label">
+        {label} {required && <span className="text-danger" aria-hidden="true">*</span>}
       </label>
       <input
         id={id}
-        className={`w-full px-4 py-3 bg-[#f8fafc] rounded-lg text-sm text-[#0f172a] border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0284c7] focus:bg-white transition-all ${className}`}
+        aria-invalid={error ? true : undefined}
+        className={cn('field-control', className)}
         {...props}
       />
-      {error && <span className="text-xs font-semibold text-[#dc2626]">{error}</span>}
+      {error && <span role="alert" className="text-xs font-semibold text-danger">{error}</span>}
     </div>
   );
 }
@@ -28,18 +30,19 @@ interface FormTextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> 
   required?: boolean;
 }
 
-export function FormTextarea({ label, error, required, id, className = '', ...props }: FormTextareaProps) {
+export function FormTextarea({ label, error, required, id, className, ...props }: FormTextareaProps) {
   return (
     <div className="space-y-1.5">
-      <label htmlFor={id} className="block text-xs font-semibold text-[#0b192c]">
-        {label} {required && <span className="text-[#dc2626]">*</span>}
+      <label htmlFor={id} className="field-label">
+        {label} {required && <span className="text-danger" aria-hidden="true">*</span>}
       </label>
       <textarea
         id={id}
-        className={`w-full px-4 py-3 bg-[#f8fafc] rounded-lg text-sm text-[#0f172a] border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0284c7] focus:bg-white transition-all resize-y ${className}`}
+        aria-invalid={error ? true : undefined}
+        className={cn('field-control min-h-32 resize-y', className)}
         {...props}
       />
-      {error && <span className="text-xs font-semibold text-[#dc2626]">{error}</span>}
+      {error && <span role="alert" className="text-xs font-semibold text-danger">{error}</span>}
     </div>
   );
 }
@@ -51,16 +54,17 @@ interface FormSelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   options: { value: string; label: string }[];
 }
 
-export function FormSelect({ label, error, required, id, options, className = '', ...props }: FormSelectProps) {
+export function FormSelect({ label, error, required, id, options, className, ...props }: FormSelectProps) {
   return (
     <div className="space-y-1.5">
-      <label htmlFor={id} className="block text-xs font-semibold text-[#0b192c]">
-        {label} {required && <span className="text-[#dc2626]">*</span>}
+      <label htmlFor={id} className="field-label">
+        {label} {required && <span className="text-danger" aria-hidden="true">*</span>}
       </label>
       <div className="relative">
         <select
           id={id}
-          className={`w-full px-4 py-3 bg-[#f8fafc] rounded-lg text-sm text-[#0f172a] border border-slate-300 appearance-none focus:outline-none focus:ring-2 focus:ring-[#0284c7] focus:bg-white transition-all cursor-pointer ${className}`}
+          aria-invalid={error ? true : undefined}
+          className={cn('field-control appearance-none cursor-pointer pe-10', className)}
           {...props}
         >
           {options.map((opt) => (
@@ -69,11 +73,11 @@ export function FormSelect({ label, error, required, id, options, className = ''
             </option>
           ))}
         </select>
-        <span className="material-symbols-outlined absolute end-3.5 top-1/2 -translate-y-1/2 text-[#64748b] pointer-events-none">
+        <span className="material-symbols-outlined absolute end-3.5 top-1/2 -translate-y-1/2 text-muted pointer-events-none">
           expand_more
         </span>
       </div>
-      {error && <span className="text-xs font-semibold text-[#dc2626]">{error}</span>}
+      {error && <span role="alert" className="text-xs font-semibold text-danger">{error}</span>}
     </div>
   );
 }

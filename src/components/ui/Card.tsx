@@ -1,14 +1,27 @@
-import type { HTMLAttributes } from 'react';
-import { cn } from '@/lib/cn';
+import type { HTMLAttributes, ElementType } from "react";
+import { cn } from "@/lib/cn";
 
-export function Card({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
+type CardVariant = "default" | "sand" | "dark" | "multicolour" | "lavender";
+
+interface CardProps extends HTMLAttributes<HTMLElement> {
+  variant?: CardVariant;
+  as?: ElementType;
+}
+
+const VARIANT_CLASSES: Record<CardVariant, string> = {
+  default: "card",
+  sand: "card-sand",
+  dark: "card-dark",
+  multicolour: "card-multicolour",
+  lavender: "surface-lavender",
+};
+
+export function Card({ className, variant = "default", as: Component = "div", children, ...props }: CardProps) {
+  const baseClass = VARIANT_CLASSES[variant];
+
   return (
-    <div
-      className={cn(
-        'rounded-sm border border-surface-container bg-surface-bright shadow-[0_1px_2px_rgba(15,23,42,0.04)]',
-        className,
-      )}
-      {...props}
-    />
+    <Component className={cn(baseClass, className)} {...props}>
+      {variant === "multicolour" ? <div className="card-content">{children}</div> : children}
+    </Component>
   );
 }

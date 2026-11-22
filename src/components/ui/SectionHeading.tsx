@@ -30,18 +30,18 @@ export function SectionHeading({
       )}
     >
       {eyebrow && (
-        <p className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary">
+        <p className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-burgundy-light">
           {eyebrow}
         </p>
       )}
       <Heading
         id={id}
-        className="font-display text-3xl font-bold tracking-tight text-brand-deep [text-wrap:balance] lg:text-4xl"
+        className="font-display text-3xl font-bold tracking-tight text-burgundy [text-wrap:balance] lg:text-4xl"
       >
         {title}
       </Heading>
       {description && (
-        <p className="mt-4 text-base leading-relaxed text-on-surface-variant">
+        <p className="mt-4 text-base leading-relaxed text-muted">
           {description}
         </p>
       )}

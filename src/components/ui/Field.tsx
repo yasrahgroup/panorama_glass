@@ -21,26 +21,23 @@ export function Field({
   children,
 }: FieldProps) {
   return (
-    <div className={cn('space-y-2', className)}>
-      <label
-        htmlFor={htmlFor}
-        className="block text-xs font-bold uppercase tracking-[0.12em] text-on-surface"
-      >
+    <div className={cn('space-y-1.5', className)}>
+      <label htmlFor={htmlFor} className="field-label">
         {label}
         {required && (
-          <span className="ms-1 text-error" aria-hidden="true">
+          <span className="ms-1 text-danger" aria-hidden="true">
             *
           </span>
         )}
       </label>
       {children}
       {hint && !error && (
-        <p id={`${htmlFor}-hint`} className="text-xs leading-relaxed text-on-surface-variant">
+        <p id={`${htmlFor}-hint`} className="text-xs leading-relaxed text-muted">
           {hint}
         </p>
       )}
       {error && (
-        <p id={`${htmlFor}-error`} role="alert" className="text-xs font-semibold text-error">
+        <p id={`${htmlFor}-error`} role="alert" className="text-xs font-semibold text-danger">
           {error}
         </p>
       )}

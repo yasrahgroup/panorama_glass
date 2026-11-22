@@ -8,17 +8,17 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const TONE_CLASSES: Record<BadgeTone, string> = {
-  primary: 'bg-primary-fixed text-primary-container',
-  secondary: 'bg-secondary-fixed text-secondary',
-  tertiary: 'bg-tertiary-fixed text-tertiary-container',
-  neutral: 'bg-surface-container-low text-on-surface-variant',
+  primary: 'bg-burgundy text-white',
+  secondary: 'bg-canvas text-burgundy-deep',
+  tertiary: 'bg-surface text-burgundy',
+  neutral: 'bg-canvas text-muted border border-line',
 };
 
 export function Badge({ tone = 'primary', className, ...props }: BadgeProps) {
   return (
     <span
       className={cn(
-        'inline-flex items-center rounded-xs px-2 py-1 text-[10px] font-bold uppercase tracking-[0.14em]',
+        'inline-flex items-center rounded-sm px-2 py-1 text-[10px] font-bold uppercase tracking-[0.14em]',
         TONE_CLASSES[tone],
         className,
       )}
