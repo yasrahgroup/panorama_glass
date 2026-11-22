@@ -655,18 +655,12 @@ const getNextSlide = (current: number, count: number) => (current + 1) % count;
 
 export function HomePage({ language, onNavigate }: HomePageProps) {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [isManuallyPaused, setIsManuallyPaused] = useState(false);
+  const isManuallyPaused = false;
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const t = useTranslations(language);
   const slideCount = HERO_SLIDES.length;
   const safeActiveSlide = slideCount > 0 ? activeSlide % slideCount : 0;
   const currentSlide = HERO_SLIDES[safeActiveSlide];
-
-  const showPreviousSlide = () => {
-    if (slideCount > 1) {
-      setActiveSlide((previous) => (previous - 1 + slideCount) % slideCount);
-    }
-  };
 
   useEffect(() => {
     if (typeof window.matchMedia !== 'function') return;
@@ -687,7 +681,7 @@ export function HomePage({ language, onNavigate }: HomePageProps) {
     }, SLIDE_DURATION_MS);
 
     return () => window.clearInterval(timer);
-  }, [isManuallyPaused, prefersReducedMotion, slideCount]);
+  }, [prefersReducedMotion, slideCount]);
 
 
   if (HERO_DISPLAY_MODE === 'slider' && !currentSlide) {
